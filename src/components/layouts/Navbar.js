@@ -1,22 +1,15 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams,
-} from "react-router-dom";
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { BrowserRouter as Router, Switch, Route, useParams } from "react-router-dom";
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
 import Home from "../pages/Home";
-import AboutUs from "../pages/AboutUs";
-import ContactUs from "../pages/ContactUs";
 import Brand from "./Brand";
+import Counter from "../pages/Counter";
+import Toggle from "../pages/Toggle";
+import FontSize from "../pages/FontSize";
+import Align from "../pages/Align";
+import ShowHide from "../pages/ShowHide";
+import Clock from "../pages/Clock";
+import ChangeColor from "../pages/ChangeColor";
 
 class BootstrapNavbar extends React.Component {
   render() {
@@ -31,22 +24,19 @@ class BootstrapNavbar extends React.Component {
                 <Navbar.Collapse id="justify-content-end">
                   <Nav className="mr-auto">
                     <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/about-us">Contact Us</Nav.Link>
-                    <Nav.Link href="/contact-us">About Us</Nav.Link>
+                    <Nav.Link href="/counter">Counter</Nav.Link>
+                    <Nav.Link href="/toggle">Toggle</Nav.Link>
+                    <Nav.Link href="/font-size">Font Size</Nav.Link>
+                    <Nav.Link href="/align">Align</Nav.Link>
+                    <Nav.Link href="/show-hide">Show Hide</Nav.Link>
+                    <Nav.Link href="/clock">Clock</Nav.Link>
+                    <Nav.Link href="/change-color">Change Color</Nav.Link>
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                      <NavDropdown.Item href="#action/3.1">
-                        Action
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.2">
-                        Another action
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.3">
-                        Something
-                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                       <NavDropdown.Divider />
-                      <NavDropdown.Item href="#action/3.4">
-                        Separated link
-                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                     </NavDropdown>
                   </Nav>
                 </Navbar.Collapse>
@@ -56,11 +46,26 @@ class BootstrapNavbar extends React.Component {
                 <Route exact path="/">
                   <Home />
                 </Route>
-                <Route path="/about-us">
-                  <AboutUs />
+                <Route path="/counter">
+                  <Counter />
                 </Route>
-                <Route path="/contact-us">
-                  <ContactUs />
+                <Route path="/toggle">
+                  <Toggle />
+                </Route>
+                <Route path="/font-size">
+                  <FontSize />
+                </Route>
+                <Route path="/align">
+                  <Align />
+                </Route>
+                <Route path="/show-hide">
+                  <ShowHide />
+                </Route>
+                <Route path="/clock">
+                  <Clock />
+                </Route>
+                <Route path="/change-color">
+                  <ChangeColor />
                 </Route>
               </Switch>
             </Router>
