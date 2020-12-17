@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import BootstrapNavbar from "./layouts/Navbar";
 
 export default class App extends Component {
   render() {
     return (
-      <div className='app'>
-        <h1>DevCamp React Starter</h1>
-        <h2>React Redux Router</h2>
+      <div className="app">
+        <BootstrapNavbar />
       </div>
     );
   }
