@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="home-main-container">
       <div className="container">
-        <h1 className="display-5 text-uppercase py-5 text-center">Welcome to My React Test SPA!</h1>
+        <h1 className="text-uppercase py-5 text-center">Welcome to My React Test SPA!</h1>
         <p>
           Aliqua sint culpa tempor laborum est Lorem esse voluptate aliqua aliqua fugiat ullamco eu. Non sint irure incididunt cillum quis minim
           mollit deserunt cupidatat do ullamco sint. Dolor duis adipisicing sunt magna. Consectetur qui anim dolore aute nostrud non aliquip cillum ad

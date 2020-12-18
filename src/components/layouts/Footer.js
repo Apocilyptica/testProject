@@ -11,7 +11,7 @@ class Footer extends Component {
         <div className="row">
           <div className="col-md-12">
             <Navbar bg="dark" variant="dark" expand="lg" fixed="bottom">
-              <Navbar.Brand href="#home">
+              <Navbar.Brand href="/">
                 <FontAwesomeIcon icon={faUserFriends} size="2x" color="#61DBFB" className="d-inline-block align-middle" /> James Jager
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
