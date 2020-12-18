@@ -45,16 +45,16 @@ class Counter extends Component {
     return (
       <div>
         <h1 className="text-uppercase py-5 text-center">Counter</h1>
-        <div className="mx-5">
-          <Button variant="secondary" size="lg" type="button" onClick={incrementCount} disabled={this.state.upButtonDisabled} block>
+        <div className="text-center">
+          <Button variant="secondary" size="lg" type="button" onClick={incrementCount} disabled={this.state.upButtonDisabled}>
             Count Up <FontAwesomeIcon icon={faLevelUpAlt} color="green" />
           </Button>
         </div>
         <div className="py-5 text-center mx-5">
           <ProgressBar variant={this.state.variant} now={this.state.count} label={`Count: ${this.state.count}`} max="10" min="-10" />{" "}
         </div>
-        <div className="mx-5">
-          <Button variant="secondary" size="lg" type="button" onClick={decrementCount} disabled={this.state.downButtonDisabled} block>
+        <div className="text-center">
+          <Button variant="secondary" size="lg" type="button" onClick={decrementCount} disabled={this.state.downButtonDisabled}>
             Count Down <FontAwesomeIcon icon={faLevelDownAlt} color="red" />
           </Button>
         </div>
