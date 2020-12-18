@@ -217,15 +217,15 @@ class Toggle extends Component {
     const BR = this.state.bottomRight;
     const P = this.state.playerActual;
 
-    // ToDO come up with a way to map the winArray for winner state
-    const winArray = [[TL, CC, BR], [TL, CL, BL], [TC, CC, BC], [TR, CR, BR], [TR, CC, BL], [TR, TC, TL], [CR, CC, CL], [BR, BC, BL], [P]];
+    // ToDo come up with a way to map the winArray for winner state
+    // const winArray = [[TL, CC, BR], [TL, CL, BL], [TC, CC, BC], [TR, CR, BR], [TR, CC, BL], [TR, TC, TL], [CR, CC, CL], [BR, BC, BL], [P]];
 
     if (TL === P && CC === P && BR === P)
       this.setState({
         winner: false,
         countWins: true,
         winnerName: this.state.playerActual,
-        playerActual: "",
+        playerActual: null,
         buttonTL: true,
         buttonTC: true,
         buttonTR: true,
@@ -242,7 +242,7 @@ class Toggle extends Component {
         winner: false,
         countWins: true,
         winnerName: this.state.playerActual,
-        playerActual: "",
+        playerActual: null,
         buttonTL: true,
         buttonTC: true,
         buttonTR: true,
@@ -259,7 +259,7 @@ class Toggle extends Component {
         winner: false,
         countWins: true,
         winnerName: this.state.playerActual,
-        playerActual: "",
+        playerActual: null,
         buttonTL: true,
         buttonTC: true,
         buttonTR: true,
@@ -276,7 +276,7 @@ class Toggle extends Component {
         winner: false,
         countWins: true,
         winnerName: this.state.playerActual,
-        playerActual: "",
+        playerActual: null,
         buttonTL: true,
         buttonTC: true,
         buttonTR: true,
@@ -293,7 +293,7 @@ class Toggle extends Component {
         winner: false,
         countWins: true,
         winnerName: this.state.playerActual,
-        playerActual: "",
+        playerActual: null,
         buttonTL: true,
         buttonTC: true,
         buttonTR: true,
@@ -310,7 +310,7 @@ class Toggle extends Component {
         winner: false,
         countWins: true,
         winnerName: this.state.playerActual,
-        playerActual: "",
+        playerActual: null,
         buttonTL: true,
         buttonTC: true,
         buttonTR: true,
@@ -327,7 +327,7 @@ class Toggle extends Component {
         winner: false,
         countWins: true,
         winnerName: this.state.playerActual,
-        playerActual: "",
+        playerActual: null,
         buttonTL: true,
         buttonTC: true,
         buttonTR: true,
@@ -344,7 +344,7 @@ class Toggle extends Component {
         winner: false,
         countWins: true,
         winnerName: this.state.playerActual,
-        playerActual: "",
+        playerActual: null,
         buttonTL: true,
         buttonTC: true,
         buttonTR: true,
